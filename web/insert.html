@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Insert</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"  crossorigin="anonymous"></script>           
+        <link href="signin.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style=" margin-top: -40px; ">
+            <nav class="navbar navbar-light  bg-light">
+            <a class="navbar-brand" href="#"><img src="my.png" width="30" height="30" alt="SK" >Online Submission</a>
+            <ul class="nav nav-tabs">
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Sign In</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" href="insert.html">Registration</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+            </li>
+            </ul>
+            </nav>
+        <br/>
+        <h2 class="form-signin-heading"><center>Student Registeration</center></h2>
+        <form class="form-signin" action="Addnew" method="post" >
+        <label for="inputid" class="sr-only">First_name</label>
+        <input type="text" id="inputid" class="form-control" placeholder="First_Name" name="fnm" required autofocus>
+        <br/>
+        <label for="inputid" class="sr-only">Last_name</label>
+        <input type="text" id="inputid" class="form-control" placeholder="Last_name" name="lnm" required autofocus>
+        <br/>
+        <label for="inputusername" class="sr-only">Enrollment No.</label>
+        <input type="text" id="inputusername" class="form-control" placeholder="Enrollment No." name="username" required >
+        <br/>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputpassword" class="form-control" placeholder="Password" name="password" required>
+        <br/>
+        <label for="inputusername" class="sr-only">email</label>
+        <input type="email" id="inputemail" class="form-control" placeholder="Email" name="email" required >
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+        <button class="btn btn-lg btn-secondary btn-block" type="reset">Reset</button>
+      </form>             
+    </body>
+</html>

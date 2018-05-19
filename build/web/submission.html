@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Insert</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"  crossorigin="anonymous"></script>           
+        <link href="signin.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style=" margin-top: -40px; ">
+            <nav class='navbar navbar-light bg-light'>
+            <a class='navbar-brand' href='#'><img src='my.png' width='30' height='30' alt='SK' >Online Submission</a>
+            <ul class='nav nav-tabs'>
+            <li class='nav-item'>
+            <a class='nav-link ' href='login.jsp'>DashBoard</a>
+            </li>
+            <li class='nav-item'>
+            <a class='nav-link active' href='profile'>Submission</a>
+            </li>
+            <li class='nav-item'>
+            <a class='nav-link' href='about.html'>About</a>
+            </li>
+            <li class='nav-item'>
+            <a class='nav-link' href='logout'>Log Out</a>
+            </li>
+            </ul>
+            </nav>
+            <br/>
+        <h2 class="form-signin-heading"><center>Submit Your Assignment Here</center></h2>
+        <form class="form-signin" action="submission" method="post"  enctype="multipart/form-data">
+        <div align="center" >
+        <select class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="sub" required>
+            <option value="#">-----Select-----</option>
+            <option value="WebTechnology">Web Technology</option>
+            <option value="AdvanceJAVA">Advance JAVA</option>
+            <option value="DotNetTechnology">Dot Net Technology</option>
+            <option value="TheoryOfComputation">Theory Of Computation</option>
+            <option value="SoftwareEngineering">Software Engineering</option> 
+        </select>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <label for="inputid" class="sr-only">File</label>
+        <input type="file" id="inputid" class="form-control" placeholder="File" name="file" required autofocus>
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+        <button class="btn btn-lg btn-secondary btn-block" type="reset">Reset</button>
+        <br/>
+        <br/>
+        
+        <marquee><h5 style="color:red;font-weight:bold;">Please select the subject for particular assignment submission</h5></marquee>
+      </form>             
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Update Status</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"  crossorigin="anonymous"></script>           
+        <link href="signin.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style=" margin-top: -40px; ">
+        <nav class="navbar navbar-light  bg-light">
+            <a class="navbar-brand" href="#"><img src="my.png" width="30" height="30" alt="SK" >Online Submission</a>
+            <ul class="nav nav-tabs">
+            <li class="nav-item">
+            <a class="nav-link active" href="display.jsp">DashBoard</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " href="logout">Sign Out</a>
+            </li>
+            </ul>
+        </nav>
+        <form class="form-signin" action="update" method="post" >
+        <h2 class="form-signin-heading">Assignment Status</h2>
+        <label for="inputid" class="sr-only">comment</label>
+        Comment : <br/><br/><input type="text" id="inputid" class="form-control"  name="cmt" autofocus>
+        <br/>
+        <label for="inputid" class="sr-only">select</label>
+        Submit  : <input type="checkbox" id="inputid" class="form-control" name="select" value="Yes">
+        <br/>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+        <button class="btn btn-lg btn-secondary btn-block" type="reset">Reset</button>
+      </form>
+    </body>
+</html>
+        

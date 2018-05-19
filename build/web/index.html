@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Online Submission</title>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'  crossorigin='anonymous'>
+        <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' crossorigin='anonymous'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'  crossorigin='anonymous'></script>
+        <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'  crossorigin='anonymous'></script>           
+        <link href="signin.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style=" margin-top: -40px; ">
+            <nav class="navbar navbar-light  bg-light">
+            <a class="navbar-brand" href="#"><img src="my.png" width="30" height="30" alt="SK" >Online Submission</a>
+            <ul class="nav nav-tabs">
+            <li class="nav-item">
+            <a class="nav-link active" href="#">Sign In</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link " href="insert.html">Registration</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+            </li>
+            </ul>
+            </nav>
+        <div class="pen-title" style="padding: 28px 0;">
+        <h1>
+            
+            <span style="vertical-align: middle; font-size: 32px; color: Navy; font-weight: bold; font-family:serif ">
+                <center><img src="my1.jpg" height="120px" style=" vertical-align: middle;" />
+                GOVERNMENT ENGINEERING COLLEGE, BHAVNAGAR<br/>
+                COMPUTER DEPARTMENT</center>
+            </span>
+        </h1>
+            </div>
+      <form class="form-signin" action="validation" method="post" align="center" >
+        <h2 class="form-signin-heading">Please Sign In </h2>
+        <div align="center" >
+        <select class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="select" required >
+            <option value="select">---select---</option> 
+            <option value="student">Student</option>
+            <option value="professor">Professor</option>
+        </select>
+        </div>
+        
+        <br/>
+        <label for="inputusername" class="sr-only">Username</label>
+        <input type="text" id="inputusername" class="form-control" placeholder="User ID" name="username" required autofocus>
+        <br/>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <br/>
+        <marquee><h6 style="color:red;font-weight:bold;">LAST DATE FOR SUBMISSION - 19 April 2018</h6></marquee>
+        </form>
+    </body>
+</html>
